@@ -1,0 +1,93 @@
+/*----------------------------------------------------------------- Navigation Bar -----------------------------------------------------------------*/
+.NavBar{
+    background-color: #0A0A0A;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.NavBar button:hover{
+    background-color: rgb(107, 107, 107);
+    height: 56px;
+}
+
+/*----------------------------------------------------------------- Homepage button only -----------------------------------------------------------------*/
+
+#mainBut{
+    background-color: #0A0A0A;
+    color: #CCCCCC;
+    border:none; 
+    font-family: 'Roboto';
+    cursor: pointer;
+    font-size: 2em;
+    height: 56px;
+}
+
+/*----------------------------------------------------------------- Buttons: dropdowns, software, hardware and videos -----------------------------------------------------------------*/
+
+.navigationButs button{
+    background-color: #0A0A0A;
+    color: #CCCCCC;
+    border:none; 
+    font-family: 'Roboto';
+    cursor: pointer;
+    font-size: 2em;
+    height: 56px;
+}
+
+/*----------------------------------------------------------------- Dropdown buttons for CVs -----------------------------------------------------------------*/
+
+.dropdown-content-CV {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-content-CV a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content-CV a:hover {
+    background-color: #ddd;
+}
+  
+#dropdown-CVs:hover .dropdown-content-CV {
+    display: block;
+}
+
+/*----------------------------------------------------------------- Dropdown buttons for affiliates -----------------------------------------------------------------*/
+
+.dropdown-content-affiliates {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-content-affiliates a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content-affiliates a:hover {
+    background-color: #ddd;
+}
+  
+#dropdown-affiliates:hover .dropdown-content-affiliates {
+    display: block;
+}
