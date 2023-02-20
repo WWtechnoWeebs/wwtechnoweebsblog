@@ -2,11 +2,13 @@
 .NavBar{
     background-color: #0A0A0A;
     height: 56px;
+    width:100%;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
     overflow: hidden;
+    position: fixed;
 }
 
 .NavBar button:hover{
