@@ -1,0 +1,26 @@
+.HomePage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+.content{
+    margin-top: 80px;
+    background-color: #0A0A0A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 50%
+}
+
+.info{
+    color: #CCCCCC;
+}
+
+.gif{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}

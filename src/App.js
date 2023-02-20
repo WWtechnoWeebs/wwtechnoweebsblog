@@ -1,8 +1,12 @@
 import NavigationBar from './components/NavigationBar';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <NavigationBar />
+    <div>
+      <NavigationBar />
+      <HomePage />
+    </div>
   );
 }
 
