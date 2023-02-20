@@ -16,7 +16,7 @@
 
 /*----------------------------------------------------------------- Homepage button only -----------------------------------------------------------------*/
 
-#mainBut{
+.mainBut{
     background-color: #0A0A0A;
     color: #CCCCCC;
     border:none; 
@@ -24,6 +24,13 @@
     cursor: pointer;
     font-size: 2em;
     height: 56px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+    margin-left: 1%;
+    position: relative;
+	display: flex;
 }
 
 /*----------------------------------------------------------------- Buttons: dropdowns, software, hardware and videos -----------------------------------------------------------------*/
@@ -36,6 +43,7 @@
     cursor: pointer;
     font-size: 2em;
     height: 56px;
+	font-weight: bold;
 }
 
 /*----------------------------------------------------------------- Dropdown buttons for CVs -----------------------------------------------------------------*/
@@ -90,4 +98,64 @@
   
 #dropdown-affiliates:hover .dropdown-content-affiliates {
     display: block;
+}
+
+/*----------------------------------------------------------------- Transition and animation for techno -----------------------------------------------------------------*/
+
+.mainBut:hover #techno{
+    position: relative;
+	display: flex;
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+.mainBut span:nth-child(8)
+{
+	animation-delay: 0.1s;
+}
+.mainBut span:nth-child(7)
+{
+	animation-delay: 0.3s;
+}
+.mainBut span:nth-child(6)
+{
+	animation-delay: 0.5s;
+}
+.mainBut span:nth-child(5)
+{
+	animation-delay: 0.7s;
+}
+.mainBut span:nth-child(4)
+{
+	animation-delay: 0.9s;
+}
+.mainBut span:nth-child(3)
+{
+	animation-delay: 1.1s;
+}
+
+@keyframes animate 
+{
+    0%    {transform: scale(0);}
+    40%   {transform: scale(0);}
+    50%,100%  {transform: scale(0);}
+}
+
+/*----------------------------------------------------------------- Transition and animation for Weebs -----------------------------------------------------------------*/
+.mainBut:hover #Weebs{
+    position: relative;
+    display: flex;
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes movement{
+    0%   {right:0px;}
+    25%  {right:92px;}
+    50%,100%  {right:92px;}
 }
