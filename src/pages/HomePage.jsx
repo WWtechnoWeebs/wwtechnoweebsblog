@@ -1,5 +1,5 @@
 import '../styleFolder/HomePage.css';
-import turtle from '../assets/turtles.mp4'
+import turtle2 from '../assets/turtles2.mp4'
 
 function HomePage() {
     return ( 
@@ -18,7 +18,7 @@ function HomePage() {
             </div>
            
                 <div className='gif'>
-                    <video src={turtle}  loop autoPlay muted/>
+                    <video src={turtle2}  loop autoPlay muted/>
                 </div>
             
         </div>
