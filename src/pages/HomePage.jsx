@@ -1,5 +1,5 @@
 import '../styleFolder/HomePage.css';
-import turtle2 from '../assets/turtles2.mp4'
+import turtle2 from '../assets/turtle_dance.mp4'
 
 function HomePage() {
     return ( 
@@ -17,11 +17,9 @@ function HomePage() {
                 Urna duis convallis convallis tellus id. Et malesuada fames ac turpis. Amet aliquam id diam maecenas ultricies.
                 </p>
             </div>
-           
-                <div className='gif'>
-                    <video src={turtle2}  loop autoPlay muted/>
-                </div>
-            
+            <video id="videoBG" autoPlay muted loop>
+                <source src={turtle2} type="video/mp4"/>
+            </video>
         </div>
      );
 }
