@@ -25,3 +25,63 @@
     
 }
 
+/*Article CSS*/
+
+.articles{
+    color: #CCCCCC;
+    width: 50%;
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40%;
+    padding: 1%;
+    text-align: justify;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 25%;
+    height: 70%;
+}
+
+.date h1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    height: 1%;
+}
+
+.date p{
+    font-size: 18px;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #CCCCCC;
+    padding: 3%;
+    border-bottom: solid;
+    border-color: #CCCCCC;
+    border-width: 1px;
+}
+
+/*Filters CSS*/
+
+.filters{
+    color:#CCCCCC;
+}
+
+/*Filters and Articles content*/
+
+.filterandart{
+}
