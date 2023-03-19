@@ -1,8 +1,8 @@
-import '../styleFolder/Hardware.css'
+import '../styleFolder/Software.css'
 import useFetch from '../hooks/useFetch';
 
-function Hardware() {
-    const {loading, error, data} = useFetch('http://localhost:1337/api/hard-wares') //Here goes the server link
+function Software() {
+    const {loading, error, data} = useFetch('http://localhost:1337/api/soft-wares') //Here goes the server link
 
     //toLocaleDateString you get the format of date you want ex en-GB
     function getMyDate(value, locale = 'en-GB') {
@@ -19,9 +19,9 @@ function Hardware() {
 
     if(loading){
         return (
-            <div className='hardware'>
-                <div className='hardwarecontent'>
-                    <h1 style={{color:'#CCCCCC'}}>LOADING...</h1>
+            <div className='software'>
+                <div className='softwarecontent'>
+                    <h1>LOADING...</h1>
                 </div>
             </div>
         );
@@ -29,17 +29,17 @@ function Hardware() {
 
     if(error){
         return (
-            <div className='hardware'>
-                <div className='hardwarecontent'>
-                    <h1 style={{color:'#CCCCCC'}}>Something went wrong...</h1>
+            <div className='software'> 
+                <div className='softwarecontent'>
+                    <h1>Something went wrong...</h1>
                 </div>
             </div>
         );
     }
 
     return ( 
-        <div className='hardware'>
-            <div className='hardwarecontent'>
+        <div className='software'>
+            <div className='softwarecontent'>
                 <div className='search'>
                     <input type='text' placeholder='Search...' required />
                 </div>
@@ -59,4 +59,4 @@ function Hardware() {
      );
 }
 
-export default Hardware;
+export default Software;
