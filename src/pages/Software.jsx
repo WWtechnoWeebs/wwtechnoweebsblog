@@ -1,4 +1,5 @@
 import '../styleFolder/Software.css'
+import '../styleFolder/LoadingAnim.css'
 import useFetch from '../hooks/useFetch';
 
 function Software() {
@@ -20,8 +21,17 @@ function Software() {
     if(loading){
         return (
             <div className='software'>
-                <div className='softwarecontent'>
-                    <h1>LOADING...</h1>
+                <div className='loading'>
+                    <span>L</span>
+                    <span>O</span>
+                    <span>A</span>
+                    <span>D</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>G</span>
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
                 </div>
             </div>
         );
