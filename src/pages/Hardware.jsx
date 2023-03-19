@@ -19,7 +19,7 @@ function Hardware() {
 
     if(loading){
         return (
-            <div className='hardware'>
+            <div className='hardwarecontent'>
                 <h1>LOADING...</h1>
             </div>
         );
@@ -27,7 +27,7 @@ function Hardware() {
 
     if(error){
         return (
-            <div className='hardware'>
+            <div className='hardwarecontent'>
                 <h1>Something went wrong...</h1>
             </div>
         );
@@ -36,23 +36,21 @@ function Hardware() {
     return ( 
         <div className='hardware'>
             <div className='hardwarecontent'>
-                <textarea className='search'>Search</textarea>
-            </div>
-            
-            <div className='filters'>
-                   
-            </div>
-            <div className='articles'>
-                {data.map(frontData => (
-                    <div key={frontData.id} className="panel">
-                        <div className='date'>
-                            <h1>{getMyDate(frontData.attributes.Date)}</h1>
-                            <p>{getMyMonth(frontData.attributes.Date)}{getMyYear(frontData.attributes.Date)}</p>
+                <div className='search'>
+                    <input type='text' placeholder='Search...' required />
+                </div>
+                <div className='articles'>
+                    {data.map(frontData => (
+                        <div key={frontData.id} className="panel">
+                            <div className='date'>
+                                <h1>{getMyDate(frontData.attributes.Date)}</h1>
+                                <p>{getMyMonth(frontData.attributes.Date)}{getMyYear(frontData.attributes.Date)}</p>
+                            </div>
+                            <p className='description'>{frontData.attributes.Description}</p>
                         </div>
-                        <p className='description'>{frontData.attributes.Description}</p>
-                    </div>
-                ))}
-            </div>            
+                    ))}
+                </div>            
+            </div>  
         </div>
      );
 }
