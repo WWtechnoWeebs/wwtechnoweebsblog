@@ -14,6 +14,9 @@
 .NavBar button:hover{
     background-color: rgb(107, 107, 107);
     height: 56px;
+
+    border: 2px solid;
+    border-radius: 5%;
 }
 
 /*----------------------------------------------------------------- Homepage button only -----------------------------------------------------------------*/
@@ -56,6 +59,11 @@
     background-color: #f9f9f9;
     min-width: 160px;
     z-index: 1;
+
+    font-family: sans-serif;
+
+    transform: translateX(-50px);
+    border: 1px solid;
 }
   
 .dropdown-content-CV a {
@@ -69,6 +77,11 @@
   
 .dropdown-content-CV a:hover {
     background-color: #ddd;
+    border: 1px solid;
+}
+
+.dropdown-content-CV a:active {
+    background-color: #b2b1b1;
 }
   
 #dropdown-CVs:hover .dropdown-content-CV {
@@ -84,6 +97,9 @@
     position:fixed;
     min-width: 160px;
     z-index: 1;
+
+    transform: translateX(-10px);
+    border: 1px solid;
 }
   
 .dropdown-content-affiliates a {
@@ -97,6 +113,13 @@
   
 .dropdown-content-affiliates a:hover {
     background-color: #ddd;
+    border: 1px solid;
+
+
+}
+
+.dropdown-content-affiliates a:active{
+    background-color: #b2b1b1;
 }
   
 #dropdown-affiliates:hover .dropdown-content-affiliates {

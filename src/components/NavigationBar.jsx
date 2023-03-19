@@ -2,9 +2,14 @@ import '../styleFolder/Navigation.css'
 import { Link } from 'react-router-dom';
 
 function NavigationBar(){
+
+    const handleNav = () => {
+        window.location.href ="/";
+    }
+
     return(
         <div className="NavBar">
-            <div className="mainBut">
+            <div className="mainBut" onClick ={handleNav}>
                 <span>W</span>
                 <span>W</span>
                 <span id='techno'>t</span>
