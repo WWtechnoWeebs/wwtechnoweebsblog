@@ -36,7 +36,9 @@ function NavigationBar(){
                     </div>
                 </div>
                 <div>
-                    <button id="softw">Software</button>
+                    <Link to="/software">
+                        <button id="softw">Software</button>
+                    </Link>
                     <Link to="/hardware">
                         <button id="hardw">Hardware</button>
                     </Link>
