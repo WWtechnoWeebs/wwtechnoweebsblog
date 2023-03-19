@@ -1,4 +1,5 @@
 import '../styleFolder/Navigation.css'
+import { Link } from 'react-router-dom';
 
 function NavigationBar(){
     return(
@@ -36,7 +37,9 @@ function NavigationBar(){
                 </div>
                 <div>
                     <button id="softw">Software</button>
-                    <button id="hardw">Hardware</button>
+                    <Link to="/hardware">
+                        <button id="hardw">Hardware</button>
+                    </Link>
                     <button id="videos">Videos</button>
                 </div>
             </div>
