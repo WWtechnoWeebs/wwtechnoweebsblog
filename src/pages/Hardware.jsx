@@ -1,6 +1,7 @@
 import '../styleFolder/Hardware.css'
-import '../styleFolder/LoadingAnim.css'
 import useFetch from '../hooks/useFetch';
+import Loading from '../components/Loading';
+import Error from '../components/Error';
 
 function Hardware() {
     const {loading, error, data} = useFetch('http://localhost:1337/api/hard-wares') //Here goes the server link
@@ -21,18 +22,7 @@ function Hardware() {
     if(loading){
         return (
             <div className='hardware'>
-                <div className='loading'>
-                    <span>L</span>
-                    <span>O</span>
-                    <span>A</span>
-                    <span>D</span>
-                    <span>I</span>
-                    <span>N</span>
-                    <span>G</span>
-                    <span>.</span>
-                    <span>.</span>
-                    <span>.</span>
-                </div>
+                <Loading />
             </div>
         );
     }
@@ -40,9 +30,7 @@ function Hardware() {
     if(error){
         return (
             <div className='hardware'>
-                <div className='hardwarecontent'>
-                    <h1>Something went wrong...</h1>
-                </div>
+                <Error />
             </div>
         );
     }
