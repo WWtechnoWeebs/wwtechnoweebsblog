@@ -1,0 +1,14 @@
+.error{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    animation: 2.5s linear 0s infinite running myScale;
+}
+
+@keyframes myScale{
+    50%{transform: scale(1.04);}
+}

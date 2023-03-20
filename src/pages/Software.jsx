@@ -1,6 +1,7 @@
 import '../styleFolder/Software.css'
-import '../styleFolder/LoadingAnim.css'
 import useFetch from '../hooks/useFetch';
+import Loading from '../components/Loading';
+import Error from '../components/Error';
 
 function Software() {
     const {loading, error, data} = useFetch('http://localhost:1337/api/soft-wares') //Here goes the server link
@@ -21,18 +22,7 @@ function Software() {
     if(loading){
         return (
             <div className='software'>
-                <div className='loading'>
-                    <span>L</span>
-                    <span>O</span>
-                    <span>A</span>
-                    <span>D</span>
-                    <span>I</span>
-                    <span>N</span>
-                    <span>G</span>
-                    <span>.</span>
-                    <span>.</span>
-                    <span>.</span>
-                </div>
+                <Loading />
             </div>
         );
     }
@@ -40,9 +30,7 @@ function Software() {
     if(error){
         return (
             <div className='software'> 
-                <div className='softwarecontent'>
-                    <h1>Something went wrong...</h1>
-                </div>
+                <Error />
             </div>
         );
     }
