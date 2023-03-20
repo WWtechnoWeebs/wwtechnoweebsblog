@@ -41,7 +41,7 @@ function Hardware() {
         return (
             <div className='hardware'>
                 <div className='hardwarecontent'>
-                    <h1 style={{color:'#CCCCCC'}}>Something went wrong...</h1>
+                    <h1>Something went wrong...</h1>
                 </div>
             </div>
         );
