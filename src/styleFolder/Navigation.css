@@ -86,6 +86,21 @@
   
 #dropdown-CVs:hover .dropdown-content-CV {
     display: block;
+
+    animation: .5s linear 0s 1 running myDropdownCVAnime;
+}
+
+/*Animation to Dropdown*/
+
+@keyframes myDropdownCVAnime{
+    0%{
+        opacity: 0;
+        transform: translate(-50px, -3px);
+    }
+    40%, 100%{
+        opacity: 1;
+        transform: translate(-50px, 0px);
+    }
 }
 
 /*----------------------------------------------------------------- Dropdown buttons for affiliates -----------------------------------------------------------------*/
@@ -124,6 +139,21 @@
   
 #dropdown-affiliates:hover .dropdown-content-affiliates {
     display: block;
+
+    animation: .5s linear 0s 1 running myDropdownAffAnime;
+}
+
+/*Animation to Dropdown*/
+
+@keyframes myDropdownAffAnime{
+    0%{
+        opacity: 0;
+        transform: translate(-10px, -3px);
+    }
+    40%, 100%{
+        opacity: 1;
+        transform: translate(-10px, 0px);
+    }
 }
 
 /*----------------------------------------------------------------- Transition and animation for techno -----------------------------------------------------------------*/
